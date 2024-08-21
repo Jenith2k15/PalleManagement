@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using MyApp.Data;
 
-namespace azure_app_trev_vs.Data
+namespace MyApp.Data
 {
     public class AppDbContext : DbContext
     {

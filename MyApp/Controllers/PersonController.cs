@@ -6,9 +6,9 @@ namespace MyApp.Controllers
 {
     public class PersonController : Controller
     {
-        private readonly azure_app_trev_vs.Data.AppDbContext _context;
+        private readonly MyApp.Data.AppDbContext _context;
 
-        public PersonController(azure_app_trev_vs.Data.AppDbContext context)
+        public PersonController(MyApp.Data.AppDbContext context)
         {
             _context = context;
         }
