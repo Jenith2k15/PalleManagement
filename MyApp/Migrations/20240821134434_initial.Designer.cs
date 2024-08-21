@@ -12,7 +12,7 @@ using azure_app_trev_vs.Data;
 namespace MyApp.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20240819125434_initial")]
+    [Migration("20240821134434_initial")]
     partial class initial
     {
         /// <inheritdoc />
