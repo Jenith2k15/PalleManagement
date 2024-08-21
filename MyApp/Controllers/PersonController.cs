@@ -6,9 +6,9 @@ namespace MyApp.Controllers
 {
     public class PersonController : Controller
     {
-        private readonly MyApp.Data.AppDbContext _context;
+        private readonly AppDbContext _context;
 
-        public PersonController(MyApp.Data.AppDbContext context)
+        public PersonController(AppDbContext context)
         {
             _context = context;
         }
@@ -30,7 +30,7 @@ namespace MyApp.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> CreateAsync(Person person)
+        public async Task<IActionResult> Create(Person person)
         {
             if (!ModelState.IsValid || _context.Persons == null || person == null)
             {
